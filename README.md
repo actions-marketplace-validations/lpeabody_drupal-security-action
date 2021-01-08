@@ -1,6 +1,6 @@
 # Drupal Security Github Action
 
-Github Action for using the lpeabody/drupal-security Docker image to check Drupal package security advisories.
+Github Action for using the [lpeabody/drupal-security](https://github.com/lpeabody/drupal-security) Docker image to check Drupal package security advisories.
 
 ## Usage
 
