@@ -4,7 +4,7 @@ inputs:
   allowed:  # id of input
     description: 'Comma-separated list of package names and version pairings.'
     required: false
-    default: false
+    default: ''
 runs:
   using: "composite"
   steps: 
