@@ -1,0 +1,12 @@
+name: 'Drupal security'
+description: 'Checks for Drupal package security advisories.'
+inputs:
+  allowed:  # id of input
+    description: 'Comma-separated list of package names and version pairings.'
+    required: false
+    default: false
+runs:
+  using: "composite"
+  steps: 
+    - run: ${{ github.action_path }}/run.sh
+      shell: bash
