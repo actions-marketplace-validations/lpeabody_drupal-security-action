@@ -20,8 +20,7 @@ jobs:
   check-security:
     ...
     - uses: lpeabody/drupal-security-action@main
-      with:
-        composer-path: /path/to/composer/directory
+      working-directory: /path/to/composer/files
 ```
 
 If you need to whitelist a security package due to false positives (or you just want to ignore this *youshouldneverignoresecuritywarnings*), add a comma-separated list of package names and version pairings:
