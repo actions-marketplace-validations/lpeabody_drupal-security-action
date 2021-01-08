@@ -15,4 +15,4 @@ runs:
         docker run --rm \
           -v $PWD/composer.json:/app/composer.json \
           -v $PWD/composer.lock:/app/composer.lock \
-          lpeabody/drupal-security drush pm:security --allowed="$ALLOWED_PACKAGES"
+          lpeabody/drupal-security:latest drush pm:security --allowed="$ALLOWED_PACKAGES"
