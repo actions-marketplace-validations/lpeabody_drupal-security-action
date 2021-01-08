@@ -9,8 +9,10 @@ runs:
   using: "composite"
   steps: 
     - shell: bash
+      env:
+        ALLOWED_PACKAGES: ${{ inputs.allowed }}
       run: |
         docker run --rm \
           -v $PWD/composer.json:/app/composer.json \
           -v $PWD/composer.lock:/app/composer.lock \
-          lpeabody/drupal-security drupal pm:security --allowed=${{ inputs.allowed }}
+          lpeabody/drupal-security drush pm:security --allowed="$ALLOWED_PACKAGES"
