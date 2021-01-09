@@ -1,5 +1,8 @@
-name: 'Drupal security'
+name: 'Drupal package security scanner'
 description: 'Checks for Drupal package security advisories.'
+branding:
+  icon: 'droplet'
+  color: 'purple'
 inputs:
   allowed:  # id of input
     description: 'Comma-separated list of package names and version pairings.'
