@@ -10,7 +10,7 @@ With composer.json and composer.lock in the current working directory:
 jobs:
   check-security:
     ...
-    - uses: lpeabody/drupal-security-action@main
+    - uses: lpeabody/drupal-security-action@1.0.0
 ```
 
 With composer.json and composer.lock elsewhere, specify the path to the directory which contains those files:
@@ -19,7 +19,7 @@ With composer.json and composer.lock elsewhere, specify the path to the director
 jobs:
   check-security:
     ...
-    - uses: lpeabody/drupal-security-action@main
+    - uses: lpeabody/drupal-security-action@1.0.0
       working-directory: /path/to/composer/files
 ```
 
@@ -29,7 +29,7 @@ If you need to whitelist a security package due to false positives (or you just 
 jobs:
   check-security:
     ...
-    - uses: lpeabody/drupal-security-action@main
+    - uses: lpeabody/drupal-security-action@1.0.0
       with:
         allowed: 'drupal/group:1.0.0-rc5,drupal/false_positive:5.2.0'
 ```
